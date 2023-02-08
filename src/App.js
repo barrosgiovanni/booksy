@@ -8,10 +8,9 @@ function App() {
   const [books, setBooks] = useState([]);
 
   const apiKey = 'AIzaSyBS-IJtZb4Yw47yTHVF1z0f5RwtZoHh45U';
-  const term = 'react'
+  const term = 'react';
 
   const fetchBooks = async () => {
-
     const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${term}+intitle:${term}&download=epub&key=${apiKey}&maxResults=40`);
     const items = response.data['items'];
     setBooks(items);

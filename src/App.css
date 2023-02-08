@@ -27,16 +27,29 @@ body {
 .book {
   background-color: #fff;
   border-radius: 1rem;
-  padding: 1rem 2rem;
+  padding: 1.2rem;
   box-shadow: 2px 2px 3px #aeaeae;
 }
 
+.book-image {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
 .book h3 {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.book h4 {
+  color: #7a7a7a;
+  font-weight: bold;
+  margin-top: 0.2rem;
+  font-size: 1rem;
 }
 
 .book p {
-  color: #7a7a7a;
-  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  text-align: justify;
 }
