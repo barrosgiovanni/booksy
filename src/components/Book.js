@@ -1,13 +1,15 @@
 import React from 'react'
 
-function Book() {
+function Book({ title, authors, image }) {
   return (
     <article className='book'>
       <img
-        src='https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL210_SR195,210_.jpg'
-        alt='love u to the moon & back' />
-      <h3>I Love You to the Moon and Back</h3>
-      <p>Amelia Hepworth</p>
+        src={image}
+        alt={title} />
+      <h3>{title}</h3>
+      <p>{authors[0]}</p>
+      <p>{authors[1]}</p>
+      <p>{authors[2]}</p>
     </article>
   )
 }
