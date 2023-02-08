@@ -5,14 +5,6 @@ function BookList() {
   return (
     <section className='book-list'>
       <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
     </section>
   )
 }
