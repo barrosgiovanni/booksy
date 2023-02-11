@@ -11,9 +11,9 @@ function SearchBar() {
     <div className='search-bar'>
       <form className='form-control'>
         <input type='text' id='term' name='term' placeholder='...' value=''></input>
+        <button type='submit' className='btn-search' on><FaSearch /></button>
       </form>
-      <button type='submit' className='btn-search'><FaSearch /></button>
-    </div>
+     </div>
   )
 }
 
