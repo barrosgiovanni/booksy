@@ -10,17 +10,22 @@ body {
   color: #222;
 }
 
+.app {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .book-list {
-  width: 90vw;
-  max-width: 1170px;
-  margin: 5rem auto;
+  width: 100vw;
+  max-width: 1400px;
+  margin: 4rem auto;
   display: grid;
   gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .book-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -52,4 +57,37 @@ body {
   font-size: 0.8rem;
   margin-top: 0.8rem;
   text-align: justify;
+}
+
+/* SearchBar */
+
+.search-bar {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.form-control input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  min-width: 40vw;
+}
+
+.btn-search {
+  padding-top: 12px;
+  padding-left: 8px;
+  background-color: transparent;
+  color: #000;
+  font-size: 2.6rem;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.btn-search:hover {
+  cursor: pointer;
 }
