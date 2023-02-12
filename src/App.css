@@ -70,13 +70,13 @@ body {
   border-radius: 0.3rem;
 }
 
-.description {
-  margin: 1rem 0;
+.description-label {
+  margin-top: 1.5rem;
   display: flex;
   justify-content: left;
 }
 
-.description .down-icon {
+.description-label .down-icon {
   margin: 2px 4px
 }
 
