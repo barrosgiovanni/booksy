@@ -1,7 +1,7 @@
 import React from 'react'
 import Description from './Description';
 
-function Book({ title, authors, image, description }) {
+function Book({ title, authors, image, description, url }) {
   return (
     <article className='book'>
       <img
@@ -13,7 +13,7 @@ function Book({ title, authors, image, description }) {
       <h4 className='author'>{authors[1]}</h4>
       <h4 className='author'>{authors[2]}</h4>
       <Description description={description} />
-      <button className='btn-info'>See on Google Play</button>
+      <a href={url}><button className='btn-info'>+ More info</button></a>
     </article>
   )
 }
