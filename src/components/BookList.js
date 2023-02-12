@@ -7,7 +7,7 @@ function BookList({ books }) {
     return <Book title={book.volumeInfo.title} authors={book.volumeInfo.authors} key={book.id} image={book.volumeInfo.imageLinks.thumbnail} description={book.volumeInfo.description} />
   })
 
-  return (  
+  return (
     <section className='book-list'>
       {renderBooks}
     </section>

@@ -29,6 +29,8 @@ body {
   }
 }
 
+/* Book component */
+
 .book {
   background-color: #fff;
   border-radius: 1rem;
@@ -46,7 +48,7 @@ body {
   font-size: 1.4rem;
 }
 
-.book h4 {
+.book .author {
   color: #7a7a7a;
   font-weight: bold;
   margin-top: 0.2rem;
@@ -57,6 +59,25 @@ body {
   font-size: 0.8rem;
   margin-top: 0.8rem;
   text-align: justify;
+}
+
+.btn-info {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+  background-color: rgb(0, 115, 255);
+  color: #f1f5f8;
+  border: 1px solid rgb(0, 115, 255);
+  border-radius: 0.3rem;
+}
+
+.description {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: left;
+}
+
+.description .down-icon {
+  margin: 2px 4px
 }
 
 /* SearchBar */
