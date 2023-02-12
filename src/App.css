@@ -96,3 +96,12 @@ body {
 .btn-search:hover {
   cursor: pointer;
 }
+
+/* Root page */
+
+.app h1 {
+  line-height: 3.5rem;
+  width: 50%;
+  margin: 8rem auto;
+  text-align: center;
+}

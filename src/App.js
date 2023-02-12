@@ -1,7 +1,6 @@
 import './App.css';
 import BookList from "./components/BookList";
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from "react";
 import SearchBar from './components/SearchBar';
 import searchBooks from './Api';
 
@@ -17,7 +16,8 @@ function App() {
   return (
     <div className='app'>
       <SearchBar onSubmit={handleSubmit}/>
-      <BookList books={books}/>
+      { books.length >= 1 ? <BookList books={books}/> : <h1>No searches were executed yet.<br></br>Please, type a search term...</h1> }
+
     </div>
   );
 }
