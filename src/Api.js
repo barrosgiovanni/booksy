@@ -6,10 +6,9 @@ const searchBooks = async (term) => {
   const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${term}+intitle:${term}&download=epub&key=${apiKey}&maxResults=40&startIndex=0`);
   const items = response.data['items'];
 
+  console.log(items);
   return items;
 
 }
 
 export default searchBooks;
-
-
